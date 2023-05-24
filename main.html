@@ -10,7 +10,74 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+	<form method="post">
+		<!--Name-->
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required placeholder="Enter your Name">
+		</div>
+		<br>
+		<!--Email-->
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required placeholder="email@gmail.com">
+		</div>
+		<br>
+		<!--Gender-->
+		<div>
+			<label for="gender">Gender</label>
+			<input type="radio" id="gender_m" name="gender" required>
+			<label for="gender_m">Male</label>
+			<input type="radio" id="gender_f" name="gender" required>
+			<label for="gender_f">Female</label>
+		</div>
+		<br>
+		<!--Car Brands-->
+		<div>
+			<label for="cars">Car Brands</label>
+			<select name="cars" id="cars" required>
+				<option value="" disabled selected hidden>Please choose an option</option>
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select>
+		</div>
+		<br>
+		<!--Age-->
+		<div>
+			<label for="age">Age</label>
+			<input type="number" id="age" name="age" required placeholder="Enter your Age">
+		</div>
+		<br>
+		<!--Date Of Birth-->
+		<div>
+			<label for="dob">Date of Birth</label>
+			<input type="date" id="dob" name="dob" required>
+		</div>
+		<br>
+		<!--Phone Number-->
+		<div>
+			<label for="tel">Phone Number</label>
+			<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+		</div>
+		<br>
+		<!--Password-->
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required placeholder="Enter your Password">
+		</div>
+		<br>
+		<!--Checkbox-->
+		<div>
+			<input type="checkbox" id="terms" name="terms" required>
+			<label for="terms">I agree to the TOS.</label>
+		</div>
+		<br>
+		<!--Submit-->
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
 </body>
 
 </html>
